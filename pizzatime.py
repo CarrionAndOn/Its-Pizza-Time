@@ -58,7 +58,7 @@ shutdown_text = shutdown_font.render("Out Of Time!", True, (255, 0, 0))
 shutdown_text_rect = shutdown_text.get_rect(center=(WINDOW_WIDTH/2, WINDOW_HEIGHT/2))
 
 # start the audio
-audio_file = "It's Pizza Time!.mp3"
+audio_file = os.path.join(sys._MEIPASS, 'pizzatime.mp3')
 pygame.mixer.music.load(audio_file)
 pygame.mixer.music.play()
 
